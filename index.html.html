@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MƏN MEMARAM - Memarlıq Tetrisi</title>
+    
+    <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+    
+    <style>
+        body {
+            background-color: #282c34;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        #pyscript-output {
+            border: 2px solid #61afef;
+            box-shadow: 0 0 20px rgba(97, 175, 239, 0.5);
+        }
+        h1 { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>MƏN MEMARAM - Memarlıq Tetrisi</h1>
+
+    <py-config>
+        packages = ["pygame-ce"]
+        [[fetch]]
+        files = [
+            "game.py",
+            "main_bg.jpg",
+            "qiz_qalasi.jpg",
+            "sirvansahlar_sarayi.jpg",
+            "ag_oglan_monastiri.jpg"
+        ]
+    </py-config>
+
+    <py-script src="game.py" output="pyscript-output">
+    </py-script>
+
+    <div id="pyscript-output">
+        <p>Oyun yüklənir... Zəhmət olmasa gözləyin. (Yüklənmə bir az vaxt ala bilər)</p>
+    </div>
+
+</body>
+</html>
